@@ -57,12 +57,15 @@ body {
     color: #fff;
 }
 .cabecalho {
-    border: 3px solid red;
+    
     /*padding = espaçamento interno*/
     background-color: #3e5c92;
     color: white;
-    padding: 60 px 20 px;
+    padding: 80px 20px;
     text-align: center;
+    margin-top: 0px;
+    font-weight: 600;
+   
 }
 .cabecalho.cabecalho-container h1{
     font-size: 2.5rem;
@@ -74,7 +77,7 @@ body {
     color: #ffd700;
 }
 .principal {
-    border: 3px solid red;
+    
     max-width: 900px;
     /*margin negativa é pra cima*/
     margin: -40px auto 40px;
@@ -82,9 +85,68 @@ body {
 }
 .secao {
     background: white;
-    border: 3px solid red;
     margin-bottom: 20px;
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 5 15px rgba(0,0,0.3);
+}
+.objetivos {
+    margin-bottom: 20px;
+    border-radius: 12px;
+    padding: 25px;
+    background: white;
+    box-shadow: 0 5 15px rgba(0,0,0.3);
+    
+}
+.datas {
+    margin-bottom: 20px;
+    border-radius: 12px;
+    padding: 25px;
+    background: white;
+    box-shadow: 0 5 15 rgba(0,0,0.3);
+    display: flex;
+    
+    
+    
+
+ }
+ .conteier_datas {
+    padding: 15px 35px;
+    margin: 7px;
+    background: #bbd3ff;
+    border-left: 5px solid #1e3c72;
+    border-radius: 12px;
+    
+ }
+ .noite_encerramento {
+    padding: 15px 35px;
+    margin: 7px;
+    background: #bbd3ff;
+    border-left: 5px solid #1e3c72;
+    border-radius: 12px;
+    justify-items: center;
+    
+ }
+ .horas_atividades {
+    margin-bottom: 20px;
+    border-radius: 12px;
+    padding: 25px;
+    background: white;
+    box-shadow: 0 5 15 rgba(0,0,0.3);
+    display: flex;
+ }
+ .atividades {
+    list-style: none;
+    padding: 25px;
+    margin: 5px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: white;
+ }
+ .atividades li { 
+    padding: 5px;
+    margin: 10px;
+    background: rgb(173, 255, 163);
+    border-radius: 5px;
+    color: rgb(6, 100, 22);
 }
