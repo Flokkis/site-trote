@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+
+}
+.menu-principal {
+    background-color: #1e3c72;
+    padding: 15px  0;
+    /*Garante que o menu fica no topo da pagina*/
+    position: sticky;
+    /*fixa o menu no teto da pagina, sempre aparecento mesmo descendo*/
+     top: 0;
+     /*overlay da pagina dando prioridade a ele encima da pagina*/
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgb(0,0,0,0.2);
+}
+.menu-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.logo {color: #fff;
+    /*tirar linha abaixo do link*/
+    text-decoration: none;
+    font-weight: bold;
+    /*1 rem = 16 pixels// varia de dispositivo */
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+}
+.lista{
+    list-style: none;
+    display: flex;
+    /*espaço entre os itens*/
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+/*somente a LI dentro da lista*/
+.lista li {color: #cbdcf7; 
+
+}
+.lista a{text-decoration: none;
+    color: #cbdcf7;
+    font-size: 0.9rem;
+    /*tons de negrito*/
+    font-weight: 500;
+    transition: color 0.3s;
+
+}
+.lista a:hover {
+    color: #fff;
+}
+.cabecalho {
+    border: 3px solid red;
+    /*padding = espaçamento interno*/
+    background-color: #3e5c92;
+    color: white;
+    padding: 60 px 20 px;
+    text-align: center;
+}
+.cabecalho.cabecalho-container h1{
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+.cabecalho-container h2 {
+    font-weight: 300;
+    font-style: italic;
+    color: #ffd700;
+}
+.principal {
+    border: 3px solid red;
+    max-width: 900px;
+    /*margin negativa é pra cima*/
+    margin: -40px auto 40px;
+    padding: 20px;
+}
+.secao {
+    background: white;
+    border: 3px solid red;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5 15px rgba(0,0,0.3);
+}
