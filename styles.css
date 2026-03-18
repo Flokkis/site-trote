@@ -83,7 +83,7 @@ body {
     margin: -40px auto 40px;
     padding: 20px;
 }
-.secao {
+section {
     background: white;
     margin-bottom: 20px;
     padding: 25px;
@@ -105,6 +105,7 @@ body {
     background: white;
     box-shadow: 0 5 15 rgba(0,0,0.3);
     display: flex;
+    gap: 20px; /*por padrão o display flex coloca na horizontal*/
     
     
     
@@ -124,7 +125,7 @@ body {
     background: #bbd3ff;
     border-left: 5px solid #1e3c72;
     border-radius: 12px;
-    justify-items: center;
+    
     
  }
  .horas_atividades {
