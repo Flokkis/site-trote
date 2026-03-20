@@ -14,7 +14,6 @@ body {
      top: 0;
      /*overlay da pagina dando prioridade a ele encima da pagina*/
     z-index: 1000;
-    box-shadow: 0 2px 10px rgb(0,0,0,0.2);
 }
 .menu-container {
     display: flex;
@@ -65,6 +64,7 @@ body {
     text-align: center;
     margin-top: 0px;
     font-weight: 600;
+    
    
 }
 .cabecalho.cabecalho-container h1{
@@ -80,7 +80,7 @@ body {
     
     max-width: 900px;
     /*margin negativa é pra cima*/
-    margin: -40px auto 40px;
+    margin: -40px auto;
     padding: 20px;
 }
 section {
@@ -114,18 +114,10 @@ section {
  .conteier_datas {
     padding: 15px 35px;
     margin: 7px;
-    background: #bbd3ff;
+    background: #a8c6ff;
     border-left: 5px solid #1e3c72;
     border-radius: 12px;
-    
- }
- .noite_encerramento {
-    padding: 15px 35px;
-    margin: 7px;
-    background: #bbd3ff;
-    border-left: 5px solid #1e3c72;
-    border-radius: 12px;
-    
+    margin-bottom: 10px;
     
  }
  .horas_atividades {
@@ -150,4 +142,40 @@ section {
     background: rgb(173, 255, 163);
     border-radius: 5px;
     color: rgb(6, 100, 22);
+}
+
+.missao  p {
+    line-height: 1.6; /*altura da linha- melhora a leitura de textos longos*/
+    text-align:justify; /*alinha o texto*/
+}
+.objetivos ul {
+    list-style: none;
+    padding: 0px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;/*Junta as bordas das colunas adjacentes, ficando uma só*/
+    margin-top: 20px;
+    background-color: white;
+}
+th , td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+}
+th {
+    background-color: #2a5298;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+.amarelo {
+    width: 25px;
+    height: 25px;
+    background-color: yellow;
+}
+.cinza {
+    width: 25px;
+    height: 25px;
+    background-color: gray;
 }
