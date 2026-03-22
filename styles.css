@@ -89,6 +89,7 @@ section {
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 5 15px rgba(0,0,0.3);
+    color: black;
 }
 .objetivos {
     margin-bottom: 20px;
@@ -178,4 +179,53 @@ th {
     width: 25px;
     height: 25px;
     background-color: gray;
+}
+
+.conteiner_alimentacao {
+    list-style: none;
+    border: 2px dashed rgb(56, 56, 10);
+    padding: 30px;
+    background-color:  #FEF9E1ff ;
+    color: #333;
+    border-radius: 10px;
+
+}
+.conteiner_alimentacao li {
+    padding: 5px;
+}
+.tabela_pontos table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+.tabela_pontos th {
+    background-color: #1e3c72;
+    padding: 10px;
+    
+}
+.suplemento {
+    background-color: rgb(255, 172, 172);
+    font-size: medium;
+    border-left: 5px solid red;
+}
+.fonte_amarela {
+    color: rgb(117, 117, 20);
+}
+
+.quinta_prova {
+    background-color: #FEF9E1ff ;
+    border-left: 5px solid #ffd700;
+}
+footer {
+    margin: 9vh  auto auto;
+    padding: 15px;
+    color: white;
+    background-color: #1e3c72;
+    text-align: center;
+    font-style: italic;
+    border-top: 5px solid #ffd700;
+
 }
