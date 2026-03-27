@@ -206,6 +206,9 @@ th {
     padding: 10px;
     
 }
+tr:hover {
+    background-color: #f9f9f9;
+}
 .suplemento {
     background-color: rgb(255, 172, 172);
     font-size: medium;
@@ -228,4 +231,35 @@ footer {
     font-style: italic;
     border-top: 5px solid #ffd700;
 
+}
+.timeline {
+    border-left: 3px solid #2a5298;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.evento {
+    margin-bottom: 25px;
+    position: relative; /*da poder de flutuar na página, sem alterar a posição de outros elementos*/
+
+}
+/*cria um pseudoelemento no CSS-serve para inserir cónteudo decorativo ou informativo logo no
+inicio de um elemento sem que altere HTML-ELEMENTO FANTASMA*/
+.evento::before  {
+    content: '';/*sem texto*/
+    width: 12px; /*largura da bolinha*/
+    height: 12px;/*altura da bolinha*/
+    background: #ff4b2b;
+    border-radius: 50%;
+    position: absolute; /*cria a bolinha na posição atual*/
+    left: -27.5px;
+}
+.grid-locais {
+    display: flex;
+    gap: 20px;
+}
+.local {
+    flex: 1; /*ocupe toda a área */
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
 }
