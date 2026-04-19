@@ -38,10 +38,30 @@
         }
     }
     else{
-            pontos = pontos + ((qtdekits) * (5000/metaKit))
+            pontos = pontos + (qtdekits) * (5000/metaKit)
         }
     
 
-    //mostramos a pontuação total ao usuario//
-    document.getElementById ("result").innerText = "Pontuação:" + pontos
+    
+    //define a meta de usuario
+    let qtdeSuplementos = Number (document.getElementById("qtdeSuplemento").value)
+    let metaSuplemento
+    if (metaKit % 2 == 0){
+        metaSuplemento = metaKit / 2 //divisão inteiro por outro inteiro 
+    }
+    else{
+        metaSuplemento = (metaKit / 2) + 0.5
+    }
+    if (qtdeSuplementos >= metaSuplemento){
+        pontos = pontos + 5000
+        if (qtdeSuplementos > metaSuplemento){
+            pontos = pontos + (qtdeSuplementos - metaSuplemento) * (5000 / metaSuplemento)
+        }
+
+    }
+    else{
+        pontos = pontos + qtdeSuplementos * (5000 / metaSuplemento)
+    }
+    //mostramos a pontuação total ao usuario//                     //toFixed define um limite para casa decimal o dois é para quantas casas após a virgula
+    document.getElementById ("result").innerText = "Pontuação:" + pontos.toFixed(2)
 }
